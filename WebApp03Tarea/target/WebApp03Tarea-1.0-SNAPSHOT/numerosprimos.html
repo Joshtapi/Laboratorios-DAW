@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Numeros primos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        form {
+            margin: 0 auto;
+            width: 50%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 0;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seleccionar numeros primos</h1>
+    <form method="post" action="ServletPrimos">
+        <label for="numPrimos">Numero de primos:</label>
+        <select id="numPrimos" name="numPrimos">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+        </select>
+        <input type="submit" value="Mostrar">
+    </form>
+</body>
+</html>

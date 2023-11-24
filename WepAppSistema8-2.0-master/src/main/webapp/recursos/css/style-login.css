@@ -1,0 +1,88 @@
+@import 'mediaqueries.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Establecer estilos para el contenedor principal */
+  .contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Definir variables personalizadas */
+  :root {
+    --color-primario: #3366FF;
+  }
+  
+  /* Establecer estilos para texto primario */
+  .text-primario {
+    color: var(--color-primario);
+  }
+  
+  /* Establecer estilos para botón de inicio de sesión */
+  .btnLogin {
+    background-color: var(--color-primario);
+    color: #fff;
+    font-weight: 500;
+    height: 56px;
+    width: 150px;
+  }
+  
+  /* Establecer estilos para el botón de inicio de sesión al pasar el mouse sobre él */
+  .btnLogin:hover {
+    box-shadow: 5px 5px 10px #ccc;
+    color: #fff;
+  }
+  
+  /* Establecer estilos para el botón de cancelar */
+  .button_cancelar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 56px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  /* Establecer estilos para el botón de cancelar al pasar el mouse sobre él */
+  .button_cancelar:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Establecer estilos para el contenedor de inicio de sesión */
+  .box-login {
+    width: 25%;
+    text-align: center;
+  }
+  
+  /* Establecer estilos para enlaces personalizados */
+  .link-custom a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Establecer estilos para el icono de vista de contraseña */
+  #icon-view-pass2 {
+    position: relative;
+    top: 6px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* Establecer estilos para el logo de Skoy */
+  #logoSkoy {
+    width: 100px;
+  }
+  

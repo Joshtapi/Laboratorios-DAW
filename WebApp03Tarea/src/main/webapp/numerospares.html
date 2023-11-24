@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seleccionar numeros pares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            border-radius: 5px;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+        select {
+            font-size: 16px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seleccionar numeros pares</h1>
+    <form method="post" action="ServletPares">
+        <label for="opcion">Numero de pares:</label>
+        <select name="opcion" id="opcion">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Mostrar">
+    </form>
+</body>
+</html>
